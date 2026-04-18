@@ -1,18 +1,18 @@
-# homebrew-yoinkc
+# homebrew-inspectah
 
-Homebrew tap for [yoinkc](https://github.com/marrusl/yoinkc) — inspect
+Homebrew tap for [inspectah](https://github.com/marrusl/inspectah) — inspect
 RHEL/CentOS hosts and produce bootc image artifacts.
 
 ## Install
 
 ```
-brew tap marrusl/yoinkc
-brew install yoinkc
+brew tap marrusl/inspectah
+brew install inspectah
 ```
 
 ## What you get
 
-The `yoinkc` CLI with three subcommands:
+The `inspectah` CLI with three subcommands:
 
 - **inspect** — collect system state from a RHEL/CentOS host (requires
   [podman](https://podman.io); install separately if needed)
@@ -24,12 +24,12 @@ Shell completions for bash, zsh, and fish are installed automatically.
 ## Upgrade
 
 ```
-brew upgrade yoinkc
+brew upgrade inspectah
 ```
 
 ## Uninstall
 
 ```
-brew uninstall yoinkc
-brew untap marrusl/yoinkc
+brew uninstall inspectah
+brew untap marrusl/inspectah
 ```

@@ -2,8 +2,8 @@ class Yoinkc < Formula
   include Language::Python::Virtualenv
 
   desc "Inspect RHEL/CentOS hosts and produce bootc image artifacts"
-  homepage "https://github.com/marrusl/yoinkc"
-  url "https://github.com/marrusl/yoinkc/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/marrusl/inspectah"
+  url "https://github.com/marrusl/inspectah/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "PLACEHOLDER_SHA256"
   license "MIT"
 
@@ -48,13 +48,13 @@ class Yoinkc < Formula
   def install
     virtualenv_install_with_resources
 
-    bash_completion.install "completions/yoinkc.bash" => "yoinkc"
-    zsh_completion.install "completions/yoinkc.zsh" => "_yoinkc"
-    fish_completion.install "completions/yoinkc.fish"
+    bash_completion.install "completions/inspectah.bash" => "inspectah"
+    zsh_completion.install "completions/inspectah.zsh" => "_inspectah"
+    fish_completion.install "completions/inspectah.fish"
   end
 
   test do
-    output = shell_output("#{bin}/yoinkc --help")
+    output = shell_output("#{bin}/inspectah --help")
     assert_match "inspect", output
   end
 end
