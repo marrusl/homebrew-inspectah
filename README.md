@@ -12,14 +12,30 @@ brew install inspectah
 
 ## What you get
 
-The `inspectah` CLI with three subcommands:
+The `inspectah` CLI — a Go wrapper that orchestrates container-based
+inspection via [podman](https://podman.io).
 
-- **inspect** — collect system state from a RHEL/CentOS host (requires
-  [podman](https://podman.io); install separately if needed)
+### Subcommands
+
+- **scan** — collect system state from a RHEL/CentOS host
 - **fleet** — aggregate multiple inspection tarballs into a fleet report
 - **refine** — generate Containerfiles and config trees from inspection data
+- **architect** — produce migration architecture recommendations
+- **build** — build a bootc container image from inspection artifacts
+- **image** — manage container images used by inspectah
 
-Shell completions for bash, zsh, and fish are installed automatically.
+### Requirements
+
+Podman must be installed separately for `scan`, `fleet`, `refine`, and
+`architect` (these run inspectah inside a container). The `build` subcommand
+invokes `podman build` directly.
+
+### Versioning note
+
+The Homebrew formula version tracks the inspectah project release (e.g.,
+0.5.1). The `inspectah version` command shows the Go wrapper version, which
+may differ. Both are correct — the formula version identifies which release
+the binary was built from.
 
 ## Upgrade
 
