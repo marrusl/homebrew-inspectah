@@ -1,8 +1,8 @@
 class Inspectah < Formula
   desc "Inspect RHEL/CentOS hosts and produce bootc image artifacts"
   homepage "https://github.com/marrusl/inspectah"
-  url "https://github.com/marrusl/inspectah/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "1ac23bc36cc5b8761e376d2af3243c9563f1b318c00352492048700ca97773d0"
+  url "https://github.com/marrusl/inspectah/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "2de999fb6548201295f414066b8a71510ea90c3c633eac272a3b9bdd0a32c26f"
   license "MIT"
 
   depends_on "go" => :build
