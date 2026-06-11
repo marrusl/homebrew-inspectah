@@ -19,9 +19,13 @@ Requires macOS on Apple Silicon (arm64).
 The `inspectah` CLI -- a Rust-based tool for RHEL/CentOS migration analysis
 and bootc image generation.
 
+**Note:** `inspectah scan` requires a Linux host (it inspects the running
+system). On macOS, use `refine`, `fleet`, `architect`, and `build` to work
+with scan tarballs collected from your Linux hosts.
+
 ### Subcommands
 
-- **scan** -- collect system state from a RHEL/CentOS host
+- **scan** -- collect system state from a RHEL/CentOS host (Linux only)
 - **fleet** -- aggregate multiple scans into a fleet report
 - **refine** -- generate Containerfiles and config trees from scan data
 - **architect** -- produce migration architecture recommendations
