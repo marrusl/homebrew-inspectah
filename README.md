@@ -1,7 +1,7 @@
 # homebrew-inspectah
 
 Homebrew tap for [inspectah](https://github.com/marrusl/inspectah) -- inspect
-RHEL/CentOS hosts and produce bootc image artifacts.
+RPM-based Linux systems and produce bootc image artifacts.
 
 Full documentation: https://marrusl.github.io/inspectah/
 
@@ -16,8 +16,8 @@ Requires macOS on Apple Silicon (arm64).
 
 ## What you get
 
-The `inspectah` CLI -- a Rust-based tool for RHEL/CentOS migration analysis
-and bootc image generation.
+The `inspectah` CLI -- a Rust-based tool for analyzing RPM-based Linux systems
+and producing bootc image artifacts.
 
 **Note:** `inspectah scan` requires a Linux host (it inspects the running
 system). On macOS, use `refine`, `fleet`, `architect`, and `build` to work
@@ -25,7 +25,7 @@ with scan tarballs collected from your Linux hosts.
 
 ### Subcommands
 
-- **scan** -- collect system state from a RHEL/CentOS host (Linux only)
+- **scan** -- collect system state from an RPM-based Linux host (Linux only)
 - **fleet** -- aggregate multiple scans into a fleet report
 - **refine** -- generate Containerfiles and config trees from scan data
 - **architect** -- produce migration architecture recommendations
