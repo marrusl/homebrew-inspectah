@@ -1,9 +1,9 @@
 class Inspectah < Formula
   desc "Inspect RHEL/CentOS hosts and produce bootc image artifacts"
   homepage "https://github.com/marrusl/inspectah"
-  version "0.8.6-beta.5"
-  url "https://github.com/marrusl/inspectah/releases/download/v0.8.6-beta.5/inspectah-darwin-arm64"
-  sha256 "852ff611d7e283c0a2d3f014570562e9c5a89c0adcf473dab99cf711494e7ff1"
+  version "0.9.0-beta.2"
+  url "https://github.com/marrusl/inspectah/releases/download/v0.9.0-beta.2/inspectah-darwin-arm64"
+  sha256 "531718e2475a62f74c11d7639f989039bccf82d1c95f7ba4b801e9853045240c"
   license "MIT"
 
   depends_on arch: :arm64
